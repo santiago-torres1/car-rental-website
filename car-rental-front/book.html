@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>CarRental &mdash; Book a Car</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="site-wrap" id="home-section">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="col-3">
+            <div class="site-logo">
+              <a href="index.html"><strong>CarRental</strong></a>
+            </div>
+          </div>
+          <div class="col-9 text-right">
+            <span class="d-inline-block d-lg-none"><a href="#" class="site-menu-toggle js-menu-toggle py-5 "><span
+                  class="icon-menu h3 text-black"></span></a></span>
+
+            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="listing.html" class="nav-link">Listings</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                <li><a href="bookings.html" class="nav-link">Your booking</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero inner-page" style="background-image: url('images/hero_1_a.jpg');">
+      <div class="container">
+        <div class="row align-items-end ">
+          <div class="col-lg-5">
+            <div class="intro">
+              <h1><strong>Book a Car</strong></h1>
+              <div class="custom-breadcrumbs"><a href="index.html">Home</a> <span class="mx-2">/</span> <strong>Book a Car</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="car-image" src="" alt="Car Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2 id="car-make-model"></h2>
+            <ul id="car-specs"></ul>
+            <form id="booking-form" action="payment.html" method="GET">
+              <div class="d-flex flex-wrap">
+                <div class="form-group col-6">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" class="form-control" required>
+                </div>
+                <div class="form-group col-6">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" class="form-control" required>
+                </div>
+                <div class="form-group col-12">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" id="phone" name="phone" class="form-control" required>
+                </div>
+                <div class="form-group col-12">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group col-6">
+                  <label for="start-date">Start Date</label>
+                  <input type="date" id="start-date" name="start-date" class="form-control" required>
+                </div>
+                <div class="form-group col-6">
+                  <label for="start-time">Start Time</label>
+                  <select id="start-time" name="start-time" class="form-control" required>
+                    <option value="">Select Time</option>
+                  </select>
+                </div>
+                <div class="form-group col-6">
+                  <label for="end-date">End Date</label>
+                  <input type="date" id="end-date" name="end-date" class="form-control" required>
+                </div>
+                <div class="form-group col-6">
+                  <label for="end-time">End Time</label>
+                  <select id="end-time" name="end-time" class="form-control" required>
+                    <option value="">Select Time</option>
+                  </select>
+                </div>
+                <input type="hidden" id="car-id" name="car-id">
+                <div class="form-group col-12 d-flex flex-wrap">
+                  <button type="button" class="btn btn-secondary col-6" onclick="history.back()">Go Back</button>
+                  <button type="submit" class="btn btn-primary col-6">Pay Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-4">About Us</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Resources</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Support</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">Company</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
+                  href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const carId = urlParams.get('car');
+
+      if (carId) {
+        fetch(`http://ec2-3-96-139-27.ca-central-1.compute.amazonaws.com:3000/cars/${carId}`)
+          .then(response => response.json())
+          .then(car => {
+            document.getElementById('car-image').src = `images/car_${car.id}.jpg`;
+            document.getElementById('car-make-model').innerText = `${car.make} ${car.model}`;
+            document.getElementById('car-specs').innerHTML = `
+              <li><strong>Year:</strong> ${car.year}</li>
+              <li><strong>Price:</strong> $${car.price}/day</li>
+              <li><strong>Available:</strong> ${car.available ? 'Yes' : 'No'}</li>
+            `;
+            document.getElementById('car-id').value = car.id;
+          })
+          .catch(error => console.error('Error fetching car data:', error));
+      }
+
+      const startTimeSelect = document.getElementById('start-time');
+      const endTimeSelect = document.getElementById('end-time');
+      for (let hour = 9; hour <= 21; hour++) {
+        const option = document.createElement('option');
+        option.value = `${hour}:00`;
+        option.text = `${hour}:00`;
+        startTimeSelect.appendChild(option.cloneNode(true));
+        endTimeSelect.appendChild(option);
+      }
+
+      document.getElementById('booking-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const queryParams = new URLSearchParams(formData).toString();
+        window.location.href = `payment.html?${queryParams}`;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
